@@ -55,7 +55,7 @@ public class Car extends Vehicle {
     }
 
     public void setCurrentGear(int currentGear) {
-        setGears(currentGear);
+        this.currentGear=currentGear;
     }
 
     public int getSeats() {
@@ -85,7 +85,7 @@ public class Car extends Vehicle {
     }
 
     public void changeGear(int newGear){
-        setGears(newGear);
+        setCurrentGear(newGear);
         System.out.println("changeGear method called - The gear is changed to: " + currentGear);
     }
 
